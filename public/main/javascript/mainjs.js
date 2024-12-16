@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (item.detail) {
                         slideContent += ` <img src="./css/images/alert_circle_outline_icon_red.png" alt="위반" class="violation-icon">`;
                     } else if (!item.detail && !item.rank) {
-                        slideContent += ` <span class="exemplary-text"><img src="./css/images/Logo.png" alt="모범음식점" class="exemplary-icon"> 클린잇 - 모범음식점</span>`;
+                        slideContent += ` <span class="exemplary-text"><img src="./css/images/logo.png" alt="모범음식점" class="exemplary-icon"> 클린잇 - 모범음식점</span>`;
                     }
 
                     slideContent += `</h2>

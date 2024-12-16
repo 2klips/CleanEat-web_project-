@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (item.detail) {
                     itemHTML += ` <img src="./css/images/alert_circle_outline_icon_red.png" alt="위반" class="violation-icon">`;
                 } else if (!item.detail && !item.rank) {
-                    itemHTML += ` <span class="exemplary-text"><img src="./css/images/Logo.png" alt="모범음식점" class="exemplary-icon"> 클린잇 - 모범음식점</span>`;
+                    itemHTML += ` <span class="exemplary-text"><img src="./css/images/logo.png" alt="모범음식점" class="exemplary-icon"> 클린잇 - 모범음식점</span>`;
                 }
                 itemHTML += rank; // 위생등급
                 itemHTML += `<p>${item.detail || ''}</p><br>`;                               

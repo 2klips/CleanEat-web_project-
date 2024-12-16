@@ -6,16 +6,15 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebas
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-    apiKey: "AIzaSyCMBEKr3tiM0Uy0TcBkcL7FKHhHpcLMP5Q",
-    authDomain: "longin-edit.firebaseapp.com",
-    projectId: "longin-edit",
-    storageBucket: "longin-edit.appspot.com",
-    messagingSenderId: "1000946770228",
-    appId: "1:1000946770228:web:1fd78b916dd2dd308e4561",
-    measurementId: "G-ZY0HKETRMZ"
-  };
-
+const firebaseConfig = ({
+    apiKey: config.apiKey,
+    authDomain: config.authDomain,
+    projectId: config.projectId,
+    storageBucket: config.storageBucket,
+    messagingSenderId: config.messagingSenderId,
+    appId: config.appId,
+    measurementId: config.measurementId
+  });
 
 
 // 회원가입에서 번호인증 할 때는 아래의 const firebaseConfig를 적용할 것.

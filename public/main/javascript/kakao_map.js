@@ -80,7 +80,7 @@ function createInfoWindowContent(name, addr, tel, rank, detail, violation) {
     const infoWindowClass = violation ? 'custom-info-window violation' : 'custom-info-window';
 
     const detailImage = detail ? '<img src="./css/images/alert_circle_outline_icon_red.png" alt="Warning Icon" class="warning-icon">' : '';
-    const additionalImage = (!detail && !starImg) ? '<img src="./css/images/Logo.png" alt="Mobam Icon" class="mobam-icon">' : '';
+    const additionalImage = (!detail && !starImg) ? '<img src="./css/images/logo.png" alt="Mobam Icon" class="mobam-icon">' : '';
 
     return `
         <div class="${infoWindowClass}";">

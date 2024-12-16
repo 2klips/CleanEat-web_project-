@@ -30,7 +30,16 @@ const config = {
     },
     host: {
         port: parseInt(required('HOST_PORT', 8080))
-    }
+    },
+    firebaseconfig:{
+        apiKey: required("firebaseapikey"),
+        authDomain: required("authDomain"),
+        projectId: required("projectId"),
+        storageBucket: required("storageBucket"),
+        messagingSenderId: required("messagingSenderId"),
+        appId: required("appId"),
+        measurementId: required("measurementId")
+      }
 };
 
 module.exports = config;

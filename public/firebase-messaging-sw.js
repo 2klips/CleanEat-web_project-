@@ -1,16 +1,17 @@
 // Firebase SDK 스크립트 로드
 importScripts('https://www.gstatic.com/firebasejs/9.1.0/firebase-app-compat.js');
 importScripts('https://www.gstatic.com/firebasejs/9.1.0/firebase-messaging-compat.js');
+const config = require("../server/config")
 
 // Firebase 앱 초기화
 const firebaseConfig = ({
-  apiKey: "AIzaSyDLwmwOZiprAUt16GYQNznmNBoOKJNCYG4",
-  authDomain: "easylogin-b519a.firebaseapp.com",
-  projectId: "easylogin-b519a",
-  storageBucket: "easylogin-b519a.appspot.com",
-  messagingSenderId: "270766993601",
-  appId: "1:270766993601:web:aa3199d115b3b816412440",
-  measurementId: "G-XM5967EN5W"
+  apiKey: config.apiKey,
+  authDomain: config.authDomain,
+  projectId: config.projectId,
+  storageBucket: config.storageBucket,
+  messagingSenderId: config.messagingSenderId,
+  appId: config.appId,
+  measurementId: config.measurementId
 });
 firebase.initializeApp(firebaseConfig);
 

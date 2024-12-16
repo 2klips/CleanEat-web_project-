@@ -1,15 +1,15 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js"; 
 import { getMessaging, getToken, deleteToken} from "https://www.gstatic.com/firebasejs/10.11.0/firebase-messaging.js";
 
-    const firebaseConfig = {
-        apiKey: "AIzaSyDLwmwOZiprAUt16GYQNznmNBoOKJNCYG4",
-        authDomain: "easylogin-b519a.firebaseapp.com",
-        projectId: "easylogin-b519a",
-        storageBucket: "easylogin-b519a.appspot.com",
-        messagingSenderId: "270766993601",
-        appId: "1:270766993601:web:aa3199d115b3b816412440",
-        measurementId: "G-XM5967EN5W"
-    };
+  const firebaseConfig = ({
+    apiKey: config.apiKey,
+    authDomain: config.authDomain,
+    projectId: config.projectId,
+    storageBucket: config.storageBucket,
+    messagingSenderId: config.messagingSenderId,
+    appId: config.appId,
+    measurementId: config.measurementId
+  });
 
     const app = initializeApp(firebaseConfig);
     const messaging = getMessaging(app);
